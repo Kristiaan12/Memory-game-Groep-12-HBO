@@ -61,6 +61,16 @@ namespace Memory_game_Groep_12_HBO
             this.TbHighscore4 = new System.Windows.Forms.TextBox();
             this.TbHighscore3 = new System.Windows.Forms.TextBox();
             this.TbHighscore2 = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.instellingenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.naamInvoerewnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gridGrooteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tijdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.themaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.spelLadenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,11 +87,12 @@ namespace Memory_game_Groep_12_HBO
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(764, 167);
+            this.button1.Location = new System.Drawing.Point(778, 192);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -93,7 +104,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(781, 52);
+            this.label1.Location = new System.Drawing.Point(799, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 18);
             this.label1.TabIndex = 2;
@@ -101,7 +112,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(272, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(303, 60);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 3;
@@ -110,7 +121,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(393, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(424, 60);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.TabIndex = 4;
@@ -119,7 +130,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(150, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(181, 60);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.TabIndex = 6;
@@ -128,7 +139,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(29, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(60, 60);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.TabIndex = 5;
@@ -137,7 +148,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(150, 137);
+            this.pictureBox5.Location = new System.Drawing.Point(181, 176);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.TabIndex = 10;
@@ -146,7 +157,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(29, 137);
+            this.pictureBox6.Location = new System.Drawing.Point(60, 176);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 100);
             this.pictureBox6.TabIndex = 9;
@@ -155,7 +166,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(393, 137);
+            this.pictureBox7.Location = new System.Drawing.Point(424, 176);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(100, 100);
             this.pictureBox7.TabIndex = 8;
@@ -164,7 +175,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(272, 137);
+            this.pictureBox8.Location = new System.Drawing.Point(303, 176);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(100, 100);
             this.pictureBox8.TabIndex = 7;
@@ -173,7 +184,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(150, 255);
+            this.pictureBox9.Location = new System.Drawing.Point(181, 294);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(100, 100);
             this.pictureBox9.TabIndex = 14;
@@ -182,7 +193,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(29, 255);
+            this.pictureBox10.Location = new System.Drawing.Point(60, 294);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(100, 100);
             this.pictureBox10.TabIndex = 13;
@@ -191,7 +202,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(393, 255);
+            this.pictureBox11.Location = new System.Drawing.Point(424, 294);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(100, 100);
             this.pictureBox11.TabIndex = 12;
@@ -200,7 +211,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(272, 255);
+            this.pictureBox12.Location = new System.Drawing.Point(303, 294);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(100, 100);
             this.pictureBox12.TabIndex = 11;
@@ -209,7 +220,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(150, 372);
+            this.pictureBox13.Location = new System.Drawing.Point(181, 411);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(100, 100);
             this.pictureBox13.TabIndex = 18;
@@ -218,7 +229,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Location = new System.Drawing.Point(29, 372);
+            this.pictureBox14.Location = new System.Drawing.Point(60, 411);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(100, 100);
             this.pictureBox14.TabIndex = 17;
@@ -227,7 +238,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Location = new System.Drawing.Point(393, 372);
+            this.pictureBox15.Location = new System.Drawing.Point(424, 411);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(100, 100);
             this.pictureBox15.TabIndex = 16;
@@ -236,7 +247,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Location = new System.Drawing.Point(272, 372);
+            this.pictureBox16.Location = new System.Drawing.Point(303, 411);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(100, 100);
             this.pictureBox16.TabIndex = 15;
@@ -248,43 +259,43 @@ namespace Memory_game_Groep_12_HBO
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(724, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Tijd over:";
+            this.label2.Text = "Tijd Piet:";
             // 
             // lblspeler1
             // 
             this.lblspeler1.AutoSize = true;
             this.lblspeler1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblspeler1.Location = new System.Drawing.Point(711, 92);
+            this.lblspeler1.Location = new System.Drawing.Point(722, 110);
             this.lblspeler1.Name = "lblspeler1";
-            this.lblspeler1.Size = new System.Drawing.Size(19, 18);
+            this.lblspeler1.Size = new System.Drawing.Size(135, 18);
             this.lblspeler1.TabIndex = 22;
-            this.lblspeler1.Text = "0";
+            this.lblspeler1.Text = "Score Piet: 150";
             // 
             // lblspeler2
             // 
             this.lblspeler2.AutoSize = true;
             this.lblspeler2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblspeler2.Location = new System.Drawing.Point(711, 125);
+            this.lblspeler2.Location = new System.Drawing.Point(722, 143);
             this.lblspeler2.Name = "lblspeler2";
-            this.lblspeler2.Size = new System.Drawing.Size(19, 18);
+            this.lblspeler2.Size = new System.Drawing.Size(131, 18);
             this.lblspeler2.TabIndex = 23;
-            this.lblspeler2.Text = "0";
+            this.lblspeler2.Text = "Score Jan: 110";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(764, 196);
+            this.button2.Location = new System.Drawing.Point(778, 250);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 24;
-            this.button2.Text = "button2";
+            this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // lblHighscore5
             // 
             this.lblHighscore5.AutoSize = true;
-            this.lblHighscore5.Location = new System.Drawing.Point(705, 359);
+            this.lblHighscore5.Location = new System.Drawing.Point(680, 406);
             this.lblHighscore5.Name = "lblHighscore5";
             this.lblHighscore5.Size = new System.Drawing.Size(67, 13);
             this.lblHighscore5.TabIndex = 29;
@@ -293,7 +304,7 @@ namespace Memory_game_Groep_12_HBO
             // lblHighscore4
             // 
             this.lblHighscore4.AutoSize = true;
-            this.lblHighscore4.Location = new System.Drawing.Point(705, 333);
+            this.lblHighscore4.Location = new System.Drawing.Point(680, 380);
             this.lblHighscore4.Name = "lblHighscore4";
             this.lblHighscore4.Size = new System.Drawing.Size(67, 13);
             this.lblHighscore4.TabIndex = 28;
@@ -302,7 +313,7 @@ namespace Memory_game_Groep_12_HBO
             // lblHighscore3
             // 
             this.lblHighscore3.AutoSize = true;
-            this.lblHighscore3.Location = new System.Drawing.Point(705, 304);
+            this.lblHighscore3.Location = new System.Drawing.Point(680, 351);
             this.lblHighscore3.Name = "lblHighscore3";
             this.lblHighscore3.Size = new System.Drawing.Size(67, 13);
             this.lblHighscore3.TabIndex = 27;
@@ -311,7 +322,7 @@ namespace Memory_game_Groep_12_HBO
             // lblHighscore2
             // 
             this.lblHighscore2.AutoSize = true;
-            this.lblHighscore2.Location = new System.Drawing.Point(705, 281);
+            this.lblHighscore2.Location = new System.Drawing.Point(680, 328);
             this.lblHighscore2.Name = "lblHighscore2";
             this.lblHighscore2.Size = new System.Drawing.Size(67, 13);
             this.lblHighscore2.TabIndex = 26;
@@ -320,7 +331,7 @@ namespace Memory_game_Groep_12_HBO
             // lblHighscore
             // 
             this.lblHighscore.AutoSize = true;
-            this.lblHighscore.Location = new System.Drawing.Point(705, 255);
+            this.lblHighscore.Location = new System.Drawing.Point(680, 302);
             this.lblHighscore.Name = "lblHighscore";
             this.lblHighscore.Size = new System.Drawing.Size(67, 13);
             this.lblHighscore.TabIndex = 25;
@@ -328,44 +339,127 @@ namespace Memory_game_Groep_12_HBO
             // 
             // TbHighscore1
             // 
-            this.TbHighscore1.Location = new System.Drawing.Point(778, 252);
+            this.TbHighscore1.Location = new System.Drawing.Point(753, 299);
             this.TbHighscore1.Name = "TbHighscore1";
             this.TbHighscore1.Size = new System.Drawing.Size(100, 20);
             this.TbHighscore1.TabIndex = 30;
             // 
             // TbHighscore5
             // 
-            this.TbHighscore5.Location = new System.Drawing.Point(778, 356);
+            this.TbHighscore5.Location = new System.Drawing.Point(753, 403);
             this.TbHighscore5.Name = "TbHighscore5";
             this.TbHighscore5.Size = new System.Drawing.Size(100, 20);
             this.TbHighscore5.TabIndex = 31;
             // 
             // TbHighscore4
             // 
-            this.TbHighscore4.Location = new System.Drawing.Point(778, 330);
+            this.TbHighscore4.Location = new System.Drawing.Point(753, 377);
             this.TbHighscore4.Name = "TbHighscore4";
             this.TbHighscore4.Size = new System.Drawing.Size(100, 20);
             this.TbHighscore4.TabIndex = 32;
             // 
             // TbHighscore3
             // 
-            this.TbHighscore3.Location = new System.Drawing.Point(778, 304);
+            this.TbHighscore3.Location = new System.Drawing.Point(753, 351);
             this.TbHighscore3.Name = "TbHighscore3";
             this.TbHighscore3.Size = new System.Drawing.Size(100, 20);
             this.TbHighscore3.TabIndex = 33;
             // 
             // TbHighscore2
             // 
-            this.TbHighscore2.Location = new System.Drawing.Point(778, 278);
+            this.TbHighscore2.Location = new System.Drawing.Point(753, 325);
             this.TbHighscore2.Name = "TbHighscore2";
             this.TbHighscore2.Size = new System.Drawing.Size(100, 20);
             this.TbHighscore2.TabIndex = 34;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.instellingenToolStripMenuItem,
+            this.naamInvoerewnToolStripMenuItem,
+            this.spelLadenToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(897, 24);
+            this.menuStrip1.TabIndex = 35;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // instellingenToolStripMenuItem
+            // 
+            this.instellingenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gridGrooteToolStripMenuItem,
+            this.tijdToolStripMenuItem,
+            this.themaToolStripMenuItem});
+            this.instellingenToolStripMenuItem.Name = "instellingenToolStripMenuItem";
+            this.instellingenToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.instellingenToolStripMenuItem.Text = "Instellingen";
+            // 
+            // naamInvoerewnToolStripMenuItem
+            // 
+            this.naamInvoerewnToolStripMenuItem.Name = "naamInvoerewnToolStripMenuItem";
+            this.naamInvoerewnToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.naamInvoerewnToolStripMenuItem.Text = "Spel opslaan";
+            // 
+            // gridGrooteToolStripMenuItem
+            // 
+            this.gridGrooteToolStripMenuItem.Name = "gridGrooteToolStripMenuItem";
+            this.gridGrooteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gridGrooteToolStripMenuItem.Text = "Grid groote";
+            // 
+            // tijdToolStripMenuItem
+            // 
+            this.tijdToolStripMenuItem.Name = "tijdToolStripMenuItem";
+            this.tijdToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tijdToolStripMenuItem.Text = "Tijd";
+            // 
+            // themaToolStripMenuItem
+            // 
+            this.themaToolStripMenuItem.Name = "themaToolStripMenuItem";
+            this.themaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.themaToolStripMenuItem.Text = "Thema";
+            // 
+            // spelLadenToolStripMenuItem
+            // 
+            this.spelLadenToolStripMenuItem.Name = "spelLadenToolStripMenuItem";
+            this.spelLadenToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.spelLadenToolStripMenuItem.Text = "Spel laden";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(778, 221);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 36;
+            this.button3.Text = "Pauze!";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(724, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Tijd Jan:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(799, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 18);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "00:60";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 572);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.TbHighscore2);
             this.Controls.Add(this.TbHighscore3);
             this.Controls.Add(this.TbHighscore4);
@@ -398,6 +492,8 @@ namespace Memory_game_Groep_12_HBO
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -417,6 +513,8 @@ namespace Memory_game_Groep_12_HBO
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,6 +555,16 @@ namespace Memory_game_Groep_12_HBO
         private System.Windows.Forms.TextBox TbHighscore4;
         private System.Windows.Forms.TextBox TbHighscore3;
         private System.Windows.Forms.TextBox TbHighscore2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem instellingenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gridGrooteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tijdToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem themaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem naamInvoerewnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem spelLadenToolStripMenuItem;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

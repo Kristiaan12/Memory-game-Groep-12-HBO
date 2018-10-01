@@ -9,3 +9,4 @@ C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HB
 C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory game Groep 12 HBO.exe
 C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory game Groep 12 HBO.pdb
 C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory_game_Groep_12_HBO.Highscores.resources
+C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory_game_Groep_12_HBO.Instellingen.resources

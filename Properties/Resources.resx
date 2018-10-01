@@ -118,34 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Boksen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boksen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kaartachtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaartachtergrond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bowlen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bowlen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Duiken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Duiken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Atletiek" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Atletiek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Basketbal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Basketbal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logo Memory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Memory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Bergklimmen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bergklimmen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bergwandelen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bergwandelen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boksen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boksen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bowlen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bowlen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Curlen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Curlen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Duiken" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Duiken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kaartachtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaartachtergrond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Kaartachtergrond1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaartachtergrond1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bergwandelen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bergwandelen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Memory1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Memory1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

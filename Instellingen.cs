@@ -16,11 +16,9 @@ using Microsoft.VisualBasic;
 
 namespace Memory_game_Groep_12_HBO
 {
-    public partial class Highscores : Form
+    public partial class Instellingen : Form
     {
 
-
-Kut
-
+    }
 }
 

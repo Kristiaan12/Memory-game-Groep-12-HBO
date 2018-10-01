@@ -176,7 +176,7 @@ namespace Memory_game_Groep_12_HBO
             button1.Enabled = false;
         }
 
-        Highscores HighscoresForm = new Highscores();
+        Instellingen HighscoresForm = new Instellingen();
 
     }
 }
