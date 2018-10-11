@@ -61,6 +61,7 @@ namespace Memory_game_Groep_12_HBO
             this.TbHighscore4 = new System.Windows.Forms.TextBox();
             this.TbHighscore3 = new System.Windows.Forms.TextBox();
             this.TbHighscore2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -93,7 +94,7 @@ namespace Memory_game_Groep_12_HBO
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(781, 52);
+            this.label1.Location = new System.Drawing.Point(781, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 18);
             this.label1.TabIndex = 2;
@@ -361,11 +362,23 @@ namespace Memory_game_Groep_12_HBO
             this.TbHighscore2.Size = new System.Drawing.Size(100, 20);
             this.TbHighscore2.TabIndex = 34;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(781, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 18);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "00:60";
+            this.label3.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 572);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.TbHighscore2);
             this.Controls.Add(this.TbHighscore3);
             this.Controls.Add(this.TbHighscore4);
@@ -457,6 +470,7 @@ namespace Memory_game_Groep_12_HBO
         private System.Windows.Forms.TextBox TbHighscore4;
         private System.Windows.Forms.TextBox TbHighscore3;
         private System.Windows.Forms.TextBox TbHighscore2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

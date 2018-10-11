@@ -19,8 +19,8 @@ namespace Memory_game_Groep_12_HBO
     public partial class Highscores : Form
     {
 
-
-Kut
-
+    //KUT <-- graag op deze manier, anders gaat iemands ontwikkelomgeving graag in debug modus :D
+    
+    }
 }
 
