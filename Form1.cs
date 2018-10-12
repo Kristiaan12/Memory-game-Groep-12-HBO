@@ -158,6 +158,7 @@ namespace Memory_game_Groep_12_HBO
             firstGuess = null;
             lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
             if (pictureBoxes.Any(p => p.Visible)) return;
+            timer.Stop();
 
             MessageBox.Show("U heeft gewonnen, Probeer het nog een keer");
             ResetImages();
@@ -176,8 +177,12 @@ namespace Memory_game_Groep_12_HBO
             button1.Enabled = false;
         }
 
-        Instellingen HighscoresForm = new Instellingen();
-
+        private void instellingenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                Instellingen f1 = new Instellingen();
+                f1.Show();
+                this.Hide();
+            }
+        }
     }
-}
 

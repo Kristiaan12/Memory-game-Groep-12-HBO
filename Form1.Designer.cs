@@ -64,9 +64,6 @@ namespace Memory_game_Groep_12_HBO
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.instellingenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.naamInvoerewnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gridGrooteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tijdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.themaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spelLadenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -386,37 +383,16 @@ namespace Memory_game_Groep_12_HBO
             // 
             // instellingenToolStripMenuItem
             // 
-            this.instellingenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gridGrooteToolStripMenuItem,
-            this.tijdToolStripMenuItem,
-            this.themaToolStripMenuItem});
             this.instellingenToolStripMenuItem.Name = "instellingenToolStripMenuItem";
             this.instellingenToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.instellingenToolStripMenuItem.Text = "Instellingen";
+            this.instellingenToolStripMenuItem.Click += new System.EventHandler(this.instellingenToolStripMenuItem_Click);
             // 
             // naamInvoerewnToolStripMenuItem
             // 
             this.naamInvoerewnToolStripMenuItem.Name = "naamInvoerewnToolStripMenuItem";
             this.naamInvoerewnToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.naamInvoerewnToolStripMenuItem.Text = "Spel opslaan";
-            // 
-            // gridGrooteToolStripMenuItem
-            // 
-            this.gridGrooteToolStripMenuItem.Name = "gridGrooteToolStripMenuItem";
-            this.gridGrooteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gridGrooteToolStripMenuItem.Text = "Grid groote";
-            // 
-            // tijdToolStripMenuItem
-            // 
-            this.tijdToolStripMenuItem.Name = "tijdToolStripMenuItem";
-            this.tijdToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tijdToolStripMenuItem.Text = "Tijd";
-            // 
-            // themaToolStripMenuItem
-            // 
-            this.themaToolStripMenuItem.Name = "themaToolStripMenuItem";
-            this.themaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.themaToolStripMenuItem.Text = "Thema";
             // 
             // spelLadenToolStripMenuItem
             // 
@@ -557,9 +533,6 @@ namespace Memory_game_Groep_12_HBO
         private System.Windows.Forms.TextBox TbHighscore2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem instellingenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gridGrooteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tijdToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem themaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem naamInvoerewnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem spelLadenToolStripMenuItem;
         private System.Windows.Forms.Button button3;
