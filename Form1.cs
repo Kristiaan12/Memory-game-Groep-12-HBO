@@ -178,6 +178,15 @@ namespace Memory_game_Groep_12_HBO
 
         Highscores HighscoresForm = new Highscores();
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
 

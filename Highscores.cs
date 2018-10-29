@@ -20,7 +20,7 @@ namespace Memory_game_Groep_12_HBO
     {
 
 
-Kut
+    }
 
 }
 
