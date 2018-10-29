@@ -9,3 +9,14 @@ C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HB
 C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory game Groep 12 HBO.exe
 C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory game Groep 12 HBO.pdb
 C:\Users\gebruiker\source\repos\Memory game Groep 12 HBO\Memory game Groep 12 HBO\obj\Debug\Memory_game_Groep_12_HBO.Highscores.resources
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\bin\Debug\Memory game Groep 12 HBO.exe.config
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\bin\Debug\Memory game Groep 12 HBO.exe
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\bin\Debug\Memory game Groep 12 HBO.pdb
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.csprojAssemblyReference.cache
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory_game_Groep_12_HBO.Highscores.resources
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory_game_Groep_12_HBO.Form1.resources
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory_game_Groep_12_HBO.Properties.Resources.resources
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.csproj.GenerateResource.cache
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.csproj.CoreCompileInputs.cache
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.exe
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.pdb
