@@ -62,6 +62,8 @@ namespace Memory_game_Groep_12_HBO
             this.TbHighscore2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.resetBtn = new System.Windows.Forms.Button();
+            this.playerLbl = new System.Windows.Forms.Label();
+            this.playerLbl2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -406,11 +408,31 @@ namespace Memory_game_Groep_12_HBO
             this.resetBtn.UseVisualStyleBackColor = true;
             this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click_1);
             // 
+            // playerLbl
+            // 
+            this.playerLbl.AutoSize = true;
+            this.playerLbl.Location = new System.Drawing.Point(923, 150);
+            this.playerLbl.Name = "playerLbl";
+            this.playerLbl.Size = new System.Drawing.Size(61, 20);
+            this.playerLbl.TabIndex = 37;
+            this.playerLbl.Text = "speler1";
+            // 
+            // playerLbl2
+            // 
+            this.playerLbl2.AutoSize = true;
+            this.playerLbl2.Location = new System.Drawing.Point(923, 199);
+            this.playerLbl2.Name = "playerLbl2";
+            this.playerLbl2.Size = new System.Drawing.Size(61, 20);
+            this.playerLbl2.TabIndex = 38;
+            this.playerLbl2.Text = "speler2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1346, 880);
+            this.Controls.Add(this.playerLbl2);
+            this.Controls.Add(this.playerLbl);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TbHighscore2);
@@ -446,6 +468,7 @@ namespace Memory_game_Groep_12_HBO
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -503,6 +526,8 @@ namespace Memory_game_Groep_12_HBO
         private System.Windows.Forms.TextBox TbHighscore2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button resetBtn;
+        private System.Windows.Forms.Label playerLbl;
+        private System.Windows.Forms.Label playerLbl2;
     }
 }
 
