@@ -20,3 +20,4 @@ C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game G
 C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.csproj.CoreCompileInputs.cache
 C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.exe
 C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory game Groep 12 HBO.pdb
+C:\Users\Devhi\Documents\GitHub\Memory-game-Groep-12-HBO\obj\Debug\Memory_game_Groep_12_HBO.Players.resources

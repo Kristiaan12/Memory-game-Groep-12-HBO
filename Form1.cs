@@ -42,7 +42,7 @@ namespace Memory_game_Groep_12_HBO
             get { return Controls.OfType<PictureBox>().ToArray(); }
 
         }
-
+  
         private static IEnumerable<Image> images
         {
             get
@@ -191,6 +191,8 @@ namespace Memory_game_Groep_12_HBO
         public Form1()
         {
             InitializeComponent();
+            speler1.Text = Players.SetValueForText1;
+            speler2.Text = Players.SetValueForText2;
         }
 
         private void clickImage(object sender, EventArgs e)
@@ -295,6 +297,12 @@ namespace Memory_game_Groep_12_HBO
 
         private void startGame(object sender, EventArgs e)
         {
+            Players settingsForm = new Players();
+
+            // Show the settings form
+            settingsForm.Show();
+            //MessageBox.Show();
+        
             //lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
             //lblspeler2.Text = "Speler 2 score:" + intScore2.ToString();
             allowClick = true;
