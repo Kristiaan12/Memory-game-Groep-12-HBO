@@ -71,9 +71,9 @@
             // 
             // playersubmitBtn
             // 
-            this.playersubmitBtn.Location = new System.Drawing.Point(29, 221);
+            this.playersubmitBtn.Location = new System.Drawing.Point(188, 91);
             this.playersubmitBtn.Name = "playersubmitBtn";
-            this.playersubmitBtn.Size = new System.Drawing.Size(146, 35);
+            this.playersubmitBtn.Size = new System.Drawing.Size(149, 91);
             this.playersubmitBtn.TabIndex = 4;
             this.playersubmitBtn.Text = "Volgende";
             this.playersubmitBtn.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(349, 203);
             this.Controls.Add(this.playersubmitBtn);
             this.Controls.Add(this.player2Txt);
             this.Controls.Add(this.player1Txt);
