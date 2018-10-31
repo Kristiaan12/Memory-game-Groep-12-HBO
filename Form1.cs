@@ -61,8 +61,6 @@ namespace Memory_game_Groep_12_HBO
             }
         }
 
-       
-
         private void startGameTimer(Boolean run)
         {
 
@@ -94,17 +92,11 @@ namespace Memory_game_Groep_12_HBO
                 timer.Stop();
             }
             
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            playerLbl.Text = Main.SetValueForText1;
-            playerLbl2.Text = Main.SetValueForText2;
-        
-        }
+        }        
 
         private void startGameTimerP2(Boolean run)
-        {
-         
+        {   
+          
             if (run)
             {
                 label3.Visible = true;
@@ -202,10 +194,7 @@ namespace Memory_game_Groep_12_HBO
         }
 
         private void clickImage(object sender, EventArgs e)
-        
         {
-            string player1 = playerLbl.Text;
-            string player2 = playerLbl2.Text;
             if (!allowClick) return;
             var pic = (PictureBox)sender;
 
@@ -249,7 +238,7 @@ namespace Memory_game_Groep_12_HBO
                         currPlayer = 2;
                         //Pauzeer timer1
                         timer.Stop();
-                        MessageBox.Show(player2 + " is nu aan de beurt.");
+                        MessageBox.Show("Speler 2 is nu aan de beurt.");
                         //Initialize if player2 is starting his first round, else resume timer.
                         if (beginTurnP2)
                         {
@@ -274,7 +263,7 @@ namespace Memory_game_Groep_12_HBO
                         currPlayer = 1;
                         //Pauzeer timer2
                         timer2.Stop();
-                        MessageBox.Show(player1 + " is nu aan de beurt.");
+                        MessageBox.Show("Speler 1 is nu aan de beurt.");
                         timer.Start();
                         //Hervat timer1
                     }
@@ -283,13 +272,13 @@ namespace Memory_game_Groep_12_HBO
             }
             firstGuess = null;
 
-            lblspeler1.Text =  " score:" + intScore1.ToString();
-            lblspeler2.Text =  " score:" + intScore2.ToString();
+            lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
+            lblspeler2.Text = "Speler 2 score:" + intScore2.ToString();
             if (pictureBoxes.Any(p => p.Visible)) return;
             intScore1 = intScore1 + 60 - (60 - time);
             intScore2 = intScore2 + 60 - (60 - time2);
-            lblspeler1.Text = player1 + " score:" + intScore1.ToString();
-            lblspeler2.Text = player2 + " score:" + intScore2.ToString();
+            lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
+            lblspeler2.Text = "Speler 2 score:" + intScore2.ToString();
             //Stop timers
             timer.Stop();
             timer2.Stop();
@@ -306,8 +295,6 @@ namespace Memory_game_Groep_12_HBO
 
         private void startGame(object sender, EventArgs e)
         {
-            
-
             //lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
             //lblspeler2.Text = "Speler 2 score:" + intScore2.ToString();
             allowClick = true;
@@ -321,13 +308,6 @@ namespace Memory_game_Groep_12_HBO
         }
 
         Highscores HighscoresForm = new Highscores();
-
-        private void resetBtn_Click_1(object sender, EventArgs e)
-        {
-           Application.Restart();
-        }
-
-     
     }
 }
 

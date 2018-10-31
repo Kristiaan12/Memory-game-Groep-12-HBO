@@ -16,7 +16,6 @@ namespace Memory_game_Groep_12_HBO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main ());
             Application.Run(new Form1());
         }
     }
