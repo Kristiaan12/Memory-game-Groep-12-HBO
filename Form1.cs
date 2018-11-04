@@ -17,6 +17,10 @@ namespace Memory_game_Groep_12_HBO
 {
     public partial class Form1 : Form
     {
+        //Set save file
+        string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "highscores.txt");
+
+        //Initialize variables
         int currPlayer = 1;
         int streakP1 = 0;
         int streakP2 = 0;
@@ -36,6 +40,76 @@ namespace Memory_game_Groep_12_HBO
         Timer timer = new Timer { Interval = 1000 };
         Timer timer2 = new Timer { Interval = 1000 };
 
+        private void load_Scores()
+        {
+            // to load save data:
+            if (File.Exists(path))
+            {
+                string loaded_text = File.ReadAllText(path);
+                //Parse string from textfile
+                string[] scores = loaded_text.Split(';');
+                //determine ranking
+                int[] ranking = { 0, 0, 0, 0, 0 };
+                int count = ranking.Length;
+                //Loop trough all scores in file
+                bool ranked = false;
+                foreach (var score in scores)
+                {
+                    if (score.Length != 0)
+                    {
+                        string scoreStr = score.ToString();
+
+                        //Seperate name from actual score
+                        string[] scoreLines = scoreStr.Split(':');
+                        //Get the last entry (the actual score/ points)
+                        string points = scoreLines.Last();
+                        int pointsInt = Int32.Parse(points);
+
+                        if (ranked == false)
+                        {
+                            //Compare score to previous added highscores
+                            for (int i = 0; i < count; i++)
+                            {
+                                //Check points from data vs highscores
+                                if (pointsInt > ranking[i])
+                                {
+                                    int next = i + 1;
+                                    for (int c = i; c < count; c++)
+                                    {
+                                        //Derank current rank holders equal to and below current rank
+
+                                        if (next < 5)
+                                        {
+                                            System.Console.WriteLine($"<{ranking[next]}>");
+                                            ranking[next] = ranking[c];
+                                            next++;
+                                        }
+                                    }
+                                    ////Set rank
+                                    ranking[i] = pointsInt;
+                                    ranked = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    TbHighscore1.Text = ranking[0].ToString();
+                    TbHighscore2.Text = ranking[1].ToString();
+                    TbHighscore3.Text = ranking[2].ToString();
+                    TbHighscore4.Text = ranking[3].ToString();
+                    TbHighscore5.Text = ranking[4].ToString();
+
+                }
+            }
+        }
+
+        //Player info
+        [Serializable]
+        public class PlayerInfo
+        {
+            public string name = "";
+            public float highScore = 0;
+        }
 
         private PictureBox[] pictureBoxes
         {
@@ -301,6 +375,11 @@ namespace Memory_game_Groep_12_HBO
             p1Done = false;
             MessageBox.Show("U heeft gewonnen, Probeer het nog een keer");
             ResetImages();
+            //Set save data!
+            string saveData = player1 + "," + intScore1.ToString() + ";";
+            saveData += player2 + "," + intScore2.ToString() + ";";
+            //Save data to file
+            File.WriteAllText(path, saveData);
             //Free set of clicks on 2nd game!?
         }
 
@@ -318,6 +397,7 @@ namespace Memory_game_Groep_12_HBO
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
+            load_Scores();
         }
 
         Highscores HighscoresForm = new Highscores();
@@ -327,7 +407,7 @@ namespace Memory_game_Groep_12_HBO
            Application.Restart();
         }
 
-     
+        //Pauze button wich stops current timer and disables clicks till resume!
     }
 }
 
