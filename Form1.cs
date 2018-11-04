@@ -52,7 +52,6 @@ namespace Memory_game_Groep_12_HBO
                 int[] ranking = { 0, 0, 0, 0, 0 };
                 int count = ranking.Length;
                 //Loop trough all scores in file
-                bool ranked = false;
                 foreach (var score in scores)
                 {
                     if (score.Length != 0)
@@ -65,32 +64,39 @@ namespace Memory_game_Groep_12_HBO
                         string points = scoreLines.Last();
                         int pointsInt = Int32.Parse(points);
 
-                        if (ranked == false)
+                        //Compare score to previous added highscores
+                        bool ranked = false;
+                        //Loop trough previous scores
+                        for (int i = 0; i < count; i++)
                         {
-                            //Compare score to previous added highscores
-                            for (int i = 0; i < count; i++)
+                            if (ranked == false)
                             {
                                 //Check points from data vs highscores
                                 if (pointsInt > ranking[i])
                                 {
-                                    int next = i + 1;
+                                    
+                                    //Loop trough previous scores starting at the index of where the new highscore needs to go
                                     for (int c = i; c < count; c++)
                                     {
+                                        int next = c + 1;
                                         //Derank current rank holders equal to and below current rank
-
                                         if (next < 5)
                                         {
+                                            System.Console.WriteLine($"<{ranking[c]}>");
+
                                             System.Console.WriteLine($"<{ranking[next]}>");
                                             ranking[next] = ranking[c];
                                             next++;
                                         }
                                     }
-                                    ////Set rank
+                                    ////Set rank and stop the loop from checking previous scores
                                     ranking[i] = pointsInt;
                                     ranked = true;
-                                    break;
+                                    goto OUTERCONTINUE;
                                 }
                             }
+                            OUTERCONTINUE:
+                            ;
                         }
                     }
                     TbHighscore1.Text = ranking[0].ToString();
@@ -385,19 +391,18 @@ namespace Memory_game_Groep_12_HBO
 
         private void startGame(object sender, EventArgs e)
         {
-            
+              //lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
+              //lblspeler2.Text = "Speler 2 score:" + intScore2.ToString();
+              allowClick = true;
+              setRandomImages();
+              HideImages();
+              startGameTimer(true);
+              startGameTimerP2(false);
+              clickTimer.Interval = 1000;
+              clickTimer.Tick += CLICKTIMER_TICK;
+              button1.Enabled = false;
+              load_Scores();
 
-            //lblspeler1.Text = "Speler 1 score:" + intScore1.ToString();
-            //lblspeler2.Text = "Speler 2 score:" + intScore2.ToString();
-            allowClick = true;
-            setRandomImages();
-            HideImages();
-            startGameTimer(true);
-            startGameTimerP2(false);
-            clickTimer.Interval = 1000;
-            clickTimer.Tick += CLICKTIMER_TICK;
-            button1.Enabled = false;
-            load_Scores();
         }
 
         Highscores HighscoresForm = new Highscores();
@@ -405,6 +410,24 @@ namespace Memory_game_Groep_12_HBO
         private void resetBtn_Click_1(object sender, EventArgs e)
         {
            Application.Restart();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (currPlayer == 1)
+            {
+                allowClick = false;
+                timer.Stop();
+                MessageBox.Show("Het spel is gepauzeerd, druk op 'OK' om te hervatten");
+                timer.Start();
+            }
+            else
+            {
+                allowClick = false;
+                timer2.Stop();
+                MessageBox.Show("Het spel is gepauzeerd, druk op 'OK' om te hervatten");
+                timer2.Start();
+            }
         }
 
         //Pauze button wich stops current timer and disables clicks till resume!
