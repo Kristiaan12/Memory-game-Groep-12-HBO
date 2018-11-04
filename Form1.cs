@@ -95,7 +95,9 @@ namespace Memory_game_Groep_12_HBO
                                     goto OUTERCONTINUE;
                                 }
                             }
+                            //Plek gevonden stoppen met loopen???
                             OUTERCONTINUE:
+                            break;
                             ;
                         }
                     }
